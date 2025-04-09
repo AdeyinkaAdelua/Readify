@@ -1,5 +1,4 @@
 
-
 document.getElementById('generate-btn').addEventListener('click', fetchBooks);
 
 
@@ -7,10 +6,9 @@ let allBooks = [];  // Store all fetched books
 let currentPage = 1;
 const booksPerPage = 21;
 
-
 async function fetchBooks() {
     const selectedGenre = document.getElementById('genre').value;
-    const url = `http://localhost:3000/api/books/${selectedGenre}`;
+    const url = `/.netlify/functions/getBooks?genre=${selectedGenre}`;; // Update the API endpoint to use Netlify functions
     try {
         const response = await fetch(url);
         const result = await response.json();
@@ -33,7 +31,6 @@ async function fetchBooks() {
         console.error("Error fetching books:", error);
     }
 }
-
 
 
 // Function to display books with pagination
