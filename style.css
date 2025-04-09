@@ -1,0 +1,133 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdddd3; /* Light cream background */
+    color: #885f5d; /* Muted brownish text */
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff; /* White container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    color: #28190E; /* Vibrant pink heading */
+}
+
+/* Form input styles */
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #28190E; /* Muted brownish color */
+}
+
+select, button {
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #28190E; /* Muted brownish border */
+}
+
+/* Button styling */
+button {
+    background-color: #e66893; /* Vibrant pink button */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28190E; /* Muted brownish hover */
+}
+
+/* Books container grid */
+#books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Individual book card styling */
+.book-card {
+    background: #feeee1; /* Soft ivory background for book cards */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #28190E; /* Muted brownish color */
+}
+
+.book-card p {
+    font-size: 14px;
+    color: #28190E;
+    margin: 5px 0;
+}
+
+.book-card img {
+    width: 70px; 
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Pagination container styling */
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px; /* Reduced space between buttons */
+}
+
+/* Pagination button styling */
+.page-btn {
+    padding: 4px 6px; /* Smaller size */
+    font-size: 12px;  /* Smaller font */
+    border: none;
+    background-color: #e66893; /* Vibrant pink button */
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.page-btn:hover {
+    background-color: #28190E; /* Muted brownish hover */
+    color: white;
+    font-weight: bold;
+}
+
+.page-btn.active {
+    background-color: #28190E; /* Highlighted active page */
+    color: white;
+}
+
+/* Link styling */
+a {
+    color: #DF367C; /* Vibrant pink for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
